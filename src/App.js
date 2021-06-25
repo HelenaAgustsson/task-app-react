@@ -18,16 +18,20 @@ function App() {
         "reminder": true
       },
       {
-        "id": 2,
+        "id": 3,
         "text": "Meeting at School",
         "day": "Feb 6th at 1:30pm",
         "reminder": true
       }
 ])
+//delete task
+const deleteTask = (id) => {
+  setTasks(tasks.filter((task) => task.id !== id));
+}
   return (
     <div className="container">
      <Header title="God dag" />
-     <Tasks tasks={tasks} />
+     <Tasks tasks={tasks} onDelete={deleteTask} />
     </div>
   );
 }
