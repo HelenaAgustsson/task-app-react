@@ -27,11 +27,16 @@ function App() {
 //delete task
 const deleteTask = (id) => {
   setTasks(tasks.filter((task) => task.id !== id));
+ 
+}
+//set reminder
+const toggleReminder = (id) => {
+  console.log(id);
 }
   return (
     <div className="container">
      <Header title="God dag" />
-     <Tasks tasks={tasks} onDelete={deleteTask} />
+     <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
     </div>
   );
 }
