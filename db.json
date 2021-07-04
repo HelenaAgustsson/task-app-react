@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Communications Lecture",
+      "day": "Feb 4th at 2:30pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Meeting at School",
+      "day": "Feb 6th at 1:30pm",
+      "reminder": true
+    },
+    {
+      "text": "Seminar",
+      "day": "October 8th at 11am",
+      "reminder": true,
+      "id": 4
+    }
+  ]
+}
